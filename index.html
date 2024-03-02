@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <header>
+        <h1>Encriptador de texto</h1>
+        <img class="logo" src="Logo.png" alt="Logo">
+</header>
+<!-- area del texto para encriptar o desencriptar -->
+<label for="inputText"></label>
+<textarea class="areadetexto" type="text" id="inputText" cols="30" rows="10" placeholder="Ingresa el texto aqui" oninput="validarEntrada()"></textarea>
+    <br>
+    
+        <div class="terminos">
+        <p>Solo letras minusculas y sin acentos</p>
+        </div>
+
+<div class="botones">
+<!-- Botones para encriptar, desencriptar y copiar -->
+<button class="botonencriptar" type="button" onclick="encriptar()">Encriptar</button>
+<button class="botondesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+<button class="botoncopiar" type="button" onclick="copiarResultado()">Copiar</button>
+<br>
+</div>
+
+<div class="encriptador">
+<!-- resultado despues de precionar boton -->
+<label for="resultText"></label>
+<textarea class="areadetexto2" type="text" id="resultText" cols="30" rows="10" readonly></textarea>
+<br>
+</div>
+
+</div>
+</body>
+<!-- Java script -->
+<script src="script.js"></script>
+</html>

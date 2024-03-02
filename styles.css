@@ -1,0 +1,164 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* los estilos específicos comienzan aquí */
+
+.contenedor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(#050607,#f3f5fc);
+    
+}
+
+.areadetexto {
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+    resize: none;
+}
+
+.areadetexto::placeholder {
+    color: #0a3871;
+}
+
+.areadetexto:focus,
+.areadetexto:active {
+    border: none;
+    outline: none;
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 13%;
+    top: 80%;
+}
+
+.terminos p {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #5d646c;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.botones .botonencriptar:hover {
+    color: #45a049; /* Cambiar el color al pasar el mouse para encriptar */
+}
+
+.botones .botondesencriptar:hover {
+    color: #ff0000; /* Cambiar el color al pasar el mouse para desencriptar */
+}
+
+.botones .botoncopiar:hover {
+    color: #0077cc; /* Cambiar el color al pasar el mouse para copiar */
+}
+
+.botonencriptar,
+.botondesencriptar,
+.botoncopiar {
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin: 1px;
+    gap: 7%;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+}
+
+.encriptador {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    left: 62%;
+    top: 15.6%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.areadetexto2 {
+    position: absolute;
+    width: 85%;
+    height: 90%;
+    left: 8%;
+    top: 5%;
+    border: none;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: white;
+    resize: none;
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Establecemos la opacidad inicial a 0 */
+    }
+    to {
+        opacity: 1; /* La opacidad llega a 1 al final de la animación */
+    }
+}
+.logo{
+/* Logo alura*/
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 980px;
+top: 558px;
+
+
+}
+
+h1{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 150px;
+    top: 40px;
+
+}
